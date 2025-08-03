@@ -44,7 +44,7 @@ public class ProdutosDAO {
     }
 }
     
-    public ArrayList<ProdutosDTO> listarProdutos() {
+    public ArrayList<ProdutosDTO> listarProdutos() { //Correção: bug de listagem de produtos
     String sql = "SELECT * FROM produtos";
     listagem = new ArrayList<>(); // limpar lista antiga
 
