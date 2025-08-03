@@ -13,7 +13,9 @@ public class ConectaDAO {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver"); 
             conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost/uc11", "root", "abcd1234"
+                "jdbc:mysql://localhost/uc11?serverTimezone=America/Sao_Paulo", 
+                "root", 
+                "abcd1234"
             );
         } catch (ClassNotFoundException e) {
             JOptionPane.showMessageDialog(null, "Driver MySQL não encontrado: " + e.getMessage());
