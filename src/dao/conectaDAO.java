@@ -13,7 +13,7 @@ public class ConectaDAO {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver"); 
             conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost/uc11?serverTimezone=America/Sao_Paulo", 
+                "jdbc:mysql://localhost/uc11?serverTimezone=America/Sao_Paulo", //Correção: Correção de bug na conexão com o banco de dados (fuso horário- serverTimezone)
                 "root", 
                 "abcd1234"
             );
